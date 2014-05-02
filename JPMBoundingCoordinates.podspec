@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/podkovyrin/JPMBoundingCoordinates"
   s.license      = 'MIT'
   s.author       = { "Andrew Podkovyrin" => "podkovyin@gmail.com" }
-  s.source       = { :git => "https://github.com/podkovyrin/JPMBoundingCoordinates.git", :tag => "{s.version}" }
+  s.source       = { :git => "https://github.com/podkovyrin/JPMBoundingCoordinates.git", :tag => s.version.to_s }
   s.platform     = :ios, '4.3'
   s.source_files = 'JPMBoundingCoordinates/JPMBoundingCoordinates/*.{h,m}'
   s.requires_arc = true
