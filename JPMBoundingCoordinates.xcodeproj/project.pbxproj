@@ -19,6 +19,7 @@
 		2AA1B26F1912619500E58460 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA1B2571912619500E58460 /* UIKit.framework */; };
 		2AA1B2771912619500E58460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA1B2751912619500E58460 /* InfoPlist.strings */; };
 		2AA1B2791912619500E58460 /* JPMBoundingCoordinatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA1B2781912619500E58460 /* JPMBoundingCoordinatesTests.m */; };
+		2AA1B284191262EA00E58460 /* JPMBoundingCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA1B283191262EA00E58460 /* JPMBoundingCoordinates.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		2AA1B2741912619500E58460 /* JPMBoundingCoordinatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JPMBoundingCoordinatesTests-Info.plist"; sourceTree = "<group>"; };
 		2AA1B2761912619500E58460 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AA1B2781912619500E58460 /* JPMBoundingCoordinatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMBoundingCoordinatesTests.m; sourceTree = "<group>"; };
+		2AA1B282191262EA00E58460 /* JPMBoundingCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPMBoundingCoordinates.h; path = JPMBoundingCoordinates/JPMBoundingCoordinates.h; sourceTree = "<group>"; };
+		2AA1B283191262EA00E58460 /* JPMBoundingCoordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JPMBoundingCoordinates.m; path = JPMBoundingCoordinates/JPMBoundingCoordinates.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		2AA1B2591912619500E58460 /* JPMBoundingCoordinates */ = {
 			isa = PBXGroup;
 			children = (
+				2AA1B285191262F300E58460 /* JPMBoundingCoordinates */,
 				2AA1B2621912619500E58460 /* JPMAppDelegate.h */,
 				2AA1B2631912619500E58460 /* JPMAppDelegate.m */,
 				2AA1B2651912619500E58460 /* Images.xcassets */,
@@ -142,6 +146,15 @@
 				2AA1B2751912619500E58460 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AA1B285191262F300E58460 /* JPMBoundingCoordinates */ = {
+			isa = PBXGroup;
+			children = (
+				2AA1B282191262EA00E58460 /* JPMBoundingCoordinates.h */,
+				2AA1B283191262EA00E58460 /* JPMBoundingCoordinates.m */,
+			);
+			name = JPMBoundingCoordinates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA1B284191262EA00E58460 /* JPMBoundingCoordinates.m in Sources */,
 				2AA1B2641912619500E58460 /* JPMAppDelegate.m in Sources */,
 				2AA1B2601912619500E58460 /* main.m in Sources */,
 			);
@@ -315,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -347,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
