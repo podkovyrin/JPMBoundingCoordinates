@@ -26,6 +26,15 @@ JPMSphericalTrapezium const kJPMSphericalTrapeziumInvalid = {{-180, -180}, {-180
 
 ///
 
+BOOL JPMSphericalTrapeziumIsValid(JPMSphericalTrapezium sphericalTrapezium) {
+    CLLocationDegrees invalidDegree = kJPMSphericalTrapeziumInvalid.northEast.latitude;
+    return (sphericalTrapezium.southWest.latitude != invalidDegree &&
+            sphericalTrapezium.southWest.longitude != invalidDegree &&
+            sphericalTrapezium.northEast.latitude != invalidDegree &&
+            sphericalTrapezium.northEast.longitude != invalidDegree);
+}
+
+///
 
 @interface JPMBoundingCoordinates () {
     double latitudeRad;

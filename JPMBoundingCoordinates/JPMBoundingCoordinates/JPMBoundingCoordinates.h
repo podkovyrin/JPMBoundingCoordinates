@@ -45,6 +45,14 @@ static inline JPMSphericalTrapezium JPMSphericalTrapeziumMake(CLLocationCoordina
  */
 extern JPMSphericalTrapezium const kJPMSphericalTrapeziumInvalid;
 
+/**
+ *  Returns a Boolean indicating whether the specified coordinate is valid.
+ *
+ *  @param sphericalTrapezium bounds to check
+ *
+ *  @return Returns YES if the specified `sphericalTrapezium` is valid, NO otherwise.
+ */
+BOOL JPMSphericalTrapeziumIsValid(JPMSphericalTrapezium sphericalTrapezium);
 
 /**
  *  Class for calculating coordinate bounds with given distance and optional radius.
