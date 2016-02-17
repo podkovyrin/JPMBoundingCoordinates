@@ -16,7 +16,7 @@ This code was ported to Objective-C directly from http://janmatuschek.de/Latitud
 pod 'JPMBoundingCoordinates'
 ```
  - **Manual:**
-Copy `JPMBoundingCoordinates/JPMBoundingCoordinates` folder anywhere to your project and add it to XCode.
+Copy `JPMBoundingCoordinates/JPMBoundingCoordinates` folder anywhere to your project and add it to Xcode.
 
 
 ##Sample
