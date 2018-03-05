@@ -15,13 +15,15 @@
 /**
  *  Rectangle, specified by two corner coordinates
  *
- *  -   NE
+ *  NW   NE
  *
- *  SW   -
+ *  SW   SE
  */
 typedef struct {
-    CLLocationCoordinate2D southWest; // min
-    CLLocationCoordinate2D northEast; // max
+    CLLocationCoordinate2D southWest;
+    CLLocationCoordinate2D northEast;
+    CLLocationCoordinate2D southEast;
+    CLLocationCoordinate2D northWest;
 } JPMSphericalTrapezium;
 
 /**
@@ -36,9 +38,10 @@ static inline JPMSphericalTrapezium JPMSphericalTrapeziumMake(CLLocationCoordina
     JPMSphericalTrapezium bounds;
     bounds.southWest = southWest;
     bounds.northEast = northEast;
+    bounds.southEast = CLLocationCoordinate2DMake(southWest.latitude, northEast.longitude);
+    bounds.northWest = CLLocationCoordinate2DMake(northEast.latitude, southWest.longitude);
     return bounds;
 }
-
 
 /**
  *  Used to specify an invalid JPMSphericalTrapezium
