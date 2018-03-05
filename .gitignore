@@ -7,3 +7,4 @@
 *.xcodeproj/xcuserdata
 /DerivedData
 .svn
+*.xcodeproj/project.xcworkspace/xcuserdata/
