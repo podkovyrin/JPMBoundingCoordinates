@@ -15,10 +15,10 @@ static double const kRadToDeg = (180.f / M_PI);
 
 static double const kEARTH_RADIUS_IN_METERS = 6372797.560856f;
 
-static CGFloat const kMIN_LAT = -90;   // -M_PI / 2
-static CGFloat const kMAX_LAT = 90;    //  M_PI / 2
-static CGFloat const kMIN_LNG = -180;  // -M_PI
-static CGFloat const kMAX_LNG = 180;   //  M_PI
+static CGFloat const kMIN_LAT = -M_PI / 2; // -90
+static CGFloat const kMAX_LAT = M_PI / 2;  // 90
+static CGFloat const kMIN_LNG = -M_PI;     // -180
+static CGFloat const kMAX_LNG = M_PI;      // 180
 
 ///
 
